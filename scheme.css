@@ -1,0 +1,52 @@
+.split {
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.top{
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.left {
+    left: 0;
+    background-color: white;
+}
+
+.right {
+    right: 0;
+    background-color: #15a3d2;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    align-content: center;
+    text-align: center;
+}
+
+.centered img {
+    border-radius: 3%;
+}
+
+
+.button {
+    background-color: #15a3d2;
+    color: black;
+    border: 0;
+    padding: 0px 0px;
+    text-decoration: none;
+    font-size: 50px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+}
