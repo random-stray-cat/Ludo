@@ -1,0 +1,299 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ludo</title>
+
+        <link rel="stylesheet" href="game_scheme.css">
+    </head>
+
+    <body>
+    
+        <section class="board">
+            <section class="field">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span class="blue_dot"></span>
+                        </td>
+                        <td></td>
+                        <td>
+                            <span class="blue_dot"></span>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2">
+                            <button type="button" class="button">
+                                THROW
+                            </button>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue path"></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <img src="dice1.png" alt="dice1" width="38px">
+                        </td>
+                        <td></td>
+                        <td>
+                            <img src="dice2.png" alt="dice2" width="38px">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span class="blue_dot"></span>
+                        </td>
+                        <td></td>
+                        <td>
+                            <span class="blue_dot"></span>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                        <td class="blue path"></td>
+                    </tr>
+                    <tr>
+                        <td class="white path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="blue_core path"></td>
+                        <td class="home_tower path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white_core path"></td>
+                        <td class="blue path"></td>
+                    </tr>
+                    <tr>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="white path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="white path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="white path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white path"></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <span class="white_dot"></span>
+                        </td>
+                        <td></td>
+                        <td>
+                            <span class="white_dot"></span>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="white path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="white path"></td>
+                        <td class="white_core path"></td>
+                        <td class="white path"></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <span class="white_dot"></span>
+                        </td>
+                        <td></td>
+                        <td>
+                            <span class="white_dot"></span>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td class="white path"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        
+    
+    </body>
+</html>
